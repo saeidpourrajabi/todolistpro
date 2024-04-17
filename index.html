@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Project</title>
+    <link rel="stylesheet" href="/stylee.css" />
+  </head>
+  <body>
+    <h1>لیست عنوان ها</h1>
+    <form class="todo-form">
+      <input type="text" class="input-text" />
+      <button type="submit" id="add" class="btn btn-add" name="data">➕</button>
+      <select class="selected">
+        <option value="all">همه</option>
+        <option value="completed">تکمیل شده</option>
+        <option value="uncompleted">تکمیل نشده</option>
+      </select>
+    </form>
+    <ul class="todo-ul">
+      <!-- <li class="todo-li"><p class="text-input">1</p>
+        <p class="date-creat">1403/01/01</p>
+        <p></p>
+        <button data-todo-id="" class="btn btn-hazf">🗑️✕</button>
+        <button data-todo-id="" class="btn btn-complet">✅✓</button>
+        <button data-todo-id="" class="btn btn-edit">📝</button>
+      </li> -->
+    </ul>
+    <div class="backdrop hidden">
+      <div class="modal">
+        <div class="modal__header">
+          <p>ویرایش لیست</p>
+        </div>
+        <div class="modal__content">
+          <label for="edit-todo">عنوان</label>
+          <input
+            type="text"
+            name="edit-todo"
+            id="edit-todo"
+            class="input-text" />
+        </div>
+        <div class="modal__actions">
+          <button class="btn close-modal" id="update-todo">بروزرسانی</button>
+          <button class="btn close-modal">لغو</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="todo.js"></script>
+</html>
